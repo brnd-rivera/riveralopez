@@ -29,5 +29,5 @@ El diagrama siguiente muestra estas capas:
 El relleno y el margen son transparentes, por lo que en el espacio ocupado por el relleno se muestra el color o imagen de fondo (si están definidos) y en el espacio ocupado por el margen se muestra el color o imagen de fondo de su elemento padre (si están definidos). Si ningún elemento padre tiene definido un color o imagen de fondo, se muestra el color o imagen de fondo de la propia página (si están definidos).
 
 Fuentes:
-- [1.MDN WEB DOCS](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model)
+- [1. MDN WEB DOCS](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model)
 - [2. uniwebsidad](https://uniwebsidad.com/libros/css/capitulo-4)
