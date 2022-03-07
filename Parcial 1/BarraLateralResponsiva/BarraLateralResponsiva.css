@@ -1,0 +1,126 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* La barra lateral la posicionamos fixed, es decir la sacamos
+     del flujo del documento y la dejamos fija y como en algun
+     momento tendrá elementos flotantes dentro establecemos
+     la propiedad overflow a auto para que "vea los flotantes"
+     */
+  div.sidebar {
+    position: fixed;
+    background-color: rgb(80, 79, 79);
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+  }
+  .content {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: w;
+  }
+  .responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  /* Los links se comportaran como bloques*/
+  a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    padding: 5px;
+  }
+  
+  a:hover {
+    background-color: rgba(121, 121, 121, 0.966);
+    color: whitesmoke;
+  }
+  a:active{
+    color: rgb(0, 255, 136);
+  }
+  
+  /* El area de contenido sera inicialmente posicionada estatica
+     ocupara su lugar pero le damos margen para la barra lateral */
+  div.content {
+    background-color:rgb(46, 46, 46);
+     margin-left: 200px; 
+    padding: 1px 16px;
+     height: 1500px; 
+  }
+  
+  .contenidoOpcion { display: none; }
+  
+  #opcion1:target,
+  #opcion2:target,
+  #opcion3:target,
+  #opcion4:target { display: block;}
+
+  input {display: none;}
+    
+.cont [type=checkbox], .cont label{
+   position: relative;
+   padding-left: 50px;
+   cursor: pointer;
+   display: inline-block;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: whitesmoke;
+   text-align:end;
+
+}
+
+.cont [type=checkbox]:checked , .cont label::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 30px;
+    height: 30px;
+   background-image: url(https://img.icons8.com/color/48/000000/menu--v8.png);
+   background-size: contain;
+}
+  input:checked + .sidebar{
+  width:0px;
+  
+   }
+
+  input:checked ~ .content {
+  margin-left: 0px;
+ border: 0px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    /* Cambiamos la barra lateral de fixed a relative
+       es decir ocupará su lugar en el flujo del documento
+       y le decimos que ocupe todo el ancho (ya no solo los 200px iniciales*/
+    div.sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Las opciones del menu ahora flotaran */
+    .sidebar a {float: left;}
+  
+    /* Como ya no habrá barra lateral ( ya que estará arriba )
+       eliminamos el margen del div de contenido*/
+    div.content {margin-left: 0;}
+
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    /* Ahora las opciones del menu dejara de flotar 
+       y seran bloques uno sobre otro */
+
+    .sidebar a {
+      float: none;
+      text-align: center;
+    }
+    
+  }
