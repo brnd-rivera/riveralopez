@@ -17,7 +17,7 @@ El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un 
 Ítem: Cada uno de los hijos flexibles que tendrá el contenedor en su interior.
 #### Dirección de los ejes ##
 Existen dos propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje principal del contenedor. Son las siguientes:
-|   Propiedades	| |  | | | 
+|   Propiedades	| |  | |
 |---|---|---|---|---|---|
 | flex-direction|**row:** Los item se ordenan en horizontal   | **row-reverse:** Los item se ordenan en horizontal pero los se invierte el punto de inicio y final y el orden de los item| **column:** Los elementos se ordenan en el eje vertical | **column-reverse:** Se ordenan en el eje vertical pero invertidos  |
 | flex-wrap | **nowrap:** Establece los ítems en una sola línea (no permite que se desborde el contenedor).  | **wrap:** Establece los ítems en modo multilínea (permite que se desborde el contenedor).   | **wrap-reverse:** Establece los ítems en modo multilínea, pero en dirección inversa. |   |   |
