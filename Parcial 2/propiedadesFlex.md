@@ -17,7 +17,7 @@ El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un 
 Ítem: Cada uno de los hijos flexibles que tendrá el contenedor en su interior.
 #### Dirección de los ejes ##
 Existen dos propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje principal del contenedor. Son las siguientes:
-|   Propiedades	| |  | | | |
+|   Propiedades	| |  | | | 
 |---|---|---|---|---|---|
 | flex-direction|**row:** Los item se ordenan en horizontal   | **row-reverse:** Los item se ordenan en horizontal pero los se invierte el punto de inicio y final y el orden de los item| **column:** Los elementos se ordenan en el eje vertical | **column-reverse:** Se ordenan en el eje vertical pero invertidos  |
 | flex-wrap | **nowrap:** Establece los ítems en una sola línea (no permite que se desborde el contenedor).  | **wrap:** Establece los ítems en modo multilínea (permite que se desborde el contenedor).   | **wrap-reverse:** Establece los ítems en modo multilínea, pero en dirección inversa. |   |   |
@@ -48,8 +48,8 @@ Las siguientes propiedades, sin embargo, se aplican sobre los ítems hijos:
 |ORDEN  	| ``` order: <valor >```	|  Para modificar el orden natural de las cajas HTML.	|  	
 | GROW 	|  	``` flex-grow: <number>;  /* default 0 */ ``` |  Permite definir el crecimiento de las cajas si es necesario.| 
 | SHRINK	| ```flex-shrink: <number>; /* default 1 */ ```	|  Define la posibilidad de encoger de una caja si es necesario	|  	
-| BASIS	| ``` flex-basis: <length> |```	| Distribución del espacio sobrante 	|
-| FLEX 	| ```flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]```| Para escribir todos los valores anteriores en una sola propiedad: 	|  	
-|  ALIGN-SELF:	|```align-self: auto | flex-start | flex-end | center | baseline | stretch;```| Alineación independiente de cada ítem. 	|
+| BASIS	| ``` flex-basis: <length>  ```	| Distribución del espacio sobrante 	|
+| FLEX 	| ```flex: none  [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]```| Para escribir todos los valores anteriores en una sola propiedad: 	|  	
+|  ALIGN-SELF	|```align-self: auto , flex-start , flex-end , center , baseline , stretch;```| Alineación independiente de cada ítem. 	|
 
 
