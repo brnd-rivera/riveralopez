@@ -49,7 +49,7 @@ Las siguientes propiedades, sin embargo, se aplican sobre los ítems hijos:
 | GROW 	|  	``` flex-grow: <number>;  /* default 0 */ ``` |  Permite definir el crecimiento de las cajas si es necesario.| 
 | SHRINK	| ```flex-shrink: <number>; /* default 1 */ ```	|  Define la posibilidad de encoger de una caja si es necesario	|  	
 | BASIS	| ``` flex-basis: <length>  ```	| Distribución del espacio sobrante 	|
-| FLEX 	| ```flex: none  [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]```| Para escribir todos los valores anteriores en una sola propiedad: 	|  	
+| FLEX 	| ```flex: none  [ <'flex-grow'> <'flex-shrink'>? <'flex-basis'> ]```| Para escribir todos los valores anteriores en una sola propiedad: 	|  	
 |  ALIGN-SELF	|```align-self: auto , flex-start , flex-end , center , baseline , stretch;```| Alineación independiente de cada ítem. 	|
 
 
