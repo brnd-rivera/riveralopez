@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contenedor{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(223, 112, 112) ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.caja{
+    background-color : rgb(19, 140, 145);
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+}
